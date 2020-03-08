@@ -1,0 +1,450 @@
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): DROP TABLE IF EXISTS players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): DROP TABLE IF EXISTS teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): CREATE TABLE IF NOT EXISTS `teams` (`id` INTEGER NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL, `description` TEXT, `coach` VARCHAR(255), `shieldUrl` VARCHAR(255), `birthYear` INTEGER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SHOW INDEX FROM `teams` FROM `codenation_development`
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): CREATE TABLE IF NOT EXISTS `players` (`id` INTEGER NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL, `nickname` VARCHAR(255), `nationality` VARCHAR(255), `age` INTEGER(2), `wage` INTEGER, `score` INTEGER(3), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, `teamId` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`teamId`) REFERENCES `teams` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SHOW INDEX FROM `players` FROM `codenation_development`
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Barcelona','Maior time da Espanha, um dos maiores do mundo.','Pep Guardiola','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQX6B-dSVeh_FkSEAVCQtTYggmm_FCYZi1xhegdkPd5Ch9Jb-ke',1899,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `teams`.`id`, `teams`.`name`, `teams`.`description`, `teams`.`coach`, `teams`.`shieldUrl`, `teams`.`birthYear`, `teams`.`createdAt`, `teams`.`updatedAt`, `players`.`id` AS `players.id`, `players`.`name` AS `players.name`, `players`.`nickname` AS `players.nickname`, `players`.`nationality` AS `players.nationality`, `players`.`age` AS `players.age`, `players`.`wage` AS `players.wage`, `players`.`score` AS `players.score`, `players`.`createdAt` AS `players.createdAt`, `players`.`updatedAt` AS `players.updatedAt`, `players`.`teamId` AS `players.teamId` FROM `teams` AS `teams` LEFT OUTER JOIN `players` AS `players` ON `teams`.`id` = `players`.`teamId`;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Barcelona','Maior time da Espanha, um dos maiores do mundo.','Pep Guardiola','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQX6B-dSVeh_FkSEAVCQtTYggmm_FCYZi1xhegdkPd5Ch9Jb-ke',1899,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `teams`.`id`, `teams`.`name`, `teams`.`description`, `teams`.`coach`, `teams`.`shieldUrl`, `teams`.`birthYear`, `teams`.`createdAt`, `teams`.`updatedAt`, `players`.`id` AS `players.id`, `players`.`name` AS `players.name`, `players`.`nickname` AS `players.nickname`, `players`.`nationality` AS `players.nationality`, `players`.`age` AS `players.age`, `players`.`wage` AS `players.wage`, `players`.`score` AS `players.score`, `players`.`createdAt` AS `players.createdAt`, `players`.`updatedAt` AS `players.updatedAt`, `players`.`teamId` AS `players.teamId` FROM `teams` AS `teams` LEFT OUTER JOIN `players` AS `players` ON `teams`.`id` = `players`.`teamId`;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Barcelona','Maior time da Espanha, um dos maiores do mundo.','Pep Guardiola','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQX6B-dSVeh_FkSEAVCQtTYggmm_FCYZi1xhegdkPd5Ch9Jb-ke',1899,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `teams`.`id`, `teams`.`name`, `teams`.`description`, `teams`.`coach`, `teams`.`shieldUrl`, `teams`.`birthYear`, `teams`.`createdAt`, `teams`.`updatedAt`, `players`.`id` AS `players.id`, `players`.`name` AS `players.name`, `players`.`nickname` AS `players.nickname`, `players`.`nationality` AS `players.nationality`, `players`.`age` AS `players.age`, `players`.`wage` AS `players.wage`, `players`.`score` AS `players.score`, `players`.`createdAt` AS `players.createdAt`, `players`.`updatedAt` AS `players.updatedAt`, `players`.`teamId` AS `players.teamId` FROM `teams` AS `teams` LEFT OUTER JOIN `players` AS `players` ON `teams`.`id` = `players`.`teamId`;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Barcelona','Maior time da Espanha, um dos maiores do mundo.','Pep Guardiola','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQX6B-dSVeh_FkSEAVCQtTYggmm_FCYZi1xhegdkPd5Ch9Jb-ke',1899,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `teams`.`id`, `teams`.`name`, `teams`.`description`, `teams`.`coach`, `teams`.`shieldUrl`, `teams`.`birthYear`, `teams`.`createdAt`, `teams`.`updatedAt`, `players`.`id` AS `players.id`, `players`.`name` AS `players.name`, `players`.`nickname` AS `players.nickname`, `players`.`nationality` AS `players.nationality`, `players`.`age` AS `players.age`, `players`.`wage` AS `players.wage`, `players`.`score` AS `players.score`, `players`.`createdAt` AS `players.createdAt`, `players`.`updatedAt` AS `players.updatedAt`, `players`.`teamId` AS `players.teamId` FROM `teams` AS `teams` LEFT OUTER JOIN `players` AS `players` ON `teams`.`id` = `players`.`teamId` WHERE `teams`.`id` = '1';
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Barcelona','Maior time da Espanha, um dos maiores do mundo.','Pep Guardiola','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQX6B-dSVeh_FkSEAVCQtTYggmm_FCYZi1xhegdkPd5Ch9Jb-ke',1899,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `teams`.`id`, `teams`.`name`, `teams`.`description`, `teams`.`coach`, `teams`.`shieldUrl`, `teams`.`birthYear`, `teams`.`createdAt`, `teams`.`updatedAt`, `players`.`id` AS `players.id`, `players`.`name` AS `players.name`, `players`.`nickname` AS `players.nickname`, `players`.`nationality` AS `players.nationality`, `players`.`age` AS `players.age`, `players`.`wage` AS `players.wage`, `players`.`score` AS `players.score`, `players`.`createdAt` AS `players.createdAt`, `players`.`updatedAt` AS `players.updatedAt`, `players`.`teamId` AS `players.teamId` FROM `teams` AS `teams` LEFT OUTER JOIN `players` AS `players` ON `teams`.`id` = `players`.`teamId` WHERE `teams`.`id` = '2';
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Ronaldinho Gaúcho','ronaldinho','Brasileiro',36,3500000,92,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Diego Tardelli','tardelli','Brasileiro',34,1990000,85,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `teams`.`id`, `teams`.`name`, `teams`.`description`, `teams`.`coach`, `teams`.`shieldUrl`, `teams`.`birthYear`, `teams`.`createdAt`, `teams`.`updatedAt`, `players`.`id` AS `players.id`, `players`.`name` AS `players.name`, `players`.`nickname` AS `players.nickname`, `players`.`nationality` AS `players.nationality`, `players`.`age` AS `players.age`, `players`.`wage` AS `players.wage`, `players`.`score` AS `players.score`, `players`.`createdAt` AS `players.createdAt`, `players`.`updatedAt` AS `players.updatedAt`, `players`.`teamId` AS `players.teamId` FROM `teams` AS `teams` LEFT OUTER JOIN `players` AS `players` ON `teams`.`id` = `players`.`teamId` WHERE `teams`.`id` = '1';
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Ronaldinho Gaúcho','ronaldinho','Brasileiro',36,3500000,92,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Diego Tardelli','tardelli','Brasileiro',34,1990000,85,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `teams`.`id`, `teams`.`name`, `teams`.`description`, `teams`.`coach`, `teams`.`shieldUrl`, `teams`.`birthYear`, `teams`.`createdAt`, `teams`.`updatedAt`, `players`.`id` AS `players.id`, `players`.`name` AS `players.name`, `players`.`nickname` AS `players.nickname`, `players`.`nationality` AS `players.nationality`, `players`.`age` AS `players.age`, `players`.`wage` AS `players.wage`, `players`.`score` AS `players.score`, `players`.`createdAt` AS `players.createdAt`, `players`.`updatedAt` AS `players.updatedAt`, `players`.`teamId` AS `players.teamId` FROM `teams` AS `teams` LEFT OUTER JOIN `players` AS `players` ON `teams`.`id` = `players`.`teamId` WHERE `teams`.`id` = '1';
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Ronaldinho Gaúcho','ronaldinho','Brasileiro',36,3500000,92,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Diego Tardelli','tardelli','Brasileiro',34,1990000,85,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `teams`.`id`, `teams`.`name`, `teams`.`description`, `teams`.`coach`, `teams`.`shieldUrl`, `teams`.`birthYear`, `teams`.`createdAt`, `teams`.`updatedAt`, `players`.`id` AS `players.id`, `players`.`name` AS `players.name`, `players`.`nickname` AS `players.nickname`, `players`.`nationality` AS `players.nationality`, `players`.`age` AS `players.age`, `players`.`wage` AS `players.wage`, `players`.`score` AS `players.score`, `players`.`createdAt` AS `players.createdAt`, `players`.`updatedAt` AS `players.updatedAt`, `players`.`teamId` AS `players.teamId` FROM `teams` AS `teams` LEFT OUTER JOIN `players` AS `players` ON `teams`.`id` = `players`.`teamId` WHERE `teams`.`id` = '1';
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Ronaldinho Gaúcho','ronaldinho','Brasileiro',36,3500000,92,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Diego Tardelli','tardelli','Brasileiro',34,1990000,85,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Juan Cazares','cazares','Boliviano',25,750000,79,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `id`, `name`, `nickname`, `nationality`, `age`, `wage`, `score`, `createdAt`, `updatedAt`, `teamId` FROM `players` AS `players`;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Ronaldinho Gaúcho','ronaldinho','Brasileiro',36,3500000,92,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Diego Tardelli','tardelli','Brasileiro',34,1990000,85,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Juan Cazares','cazares','Boliviano',25,750000,79,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `id`, `name`, `nickname`, `nationality`, `age`, `wage`, `score`, `createdAt`, `updatedAt`, `teamId` FROM `players` AS `players`;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Ronaldinho Gaúcho','ronaldinho','Brasileiro',36,3500000,92,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Diego Tardelli','tardelli','Brasileiro',34,1990000,85,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Juan Cazares','cazares','Boliviano',25,750000,79,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `id`, `name`, `nickname`, `nationality`, `age`, `wage`, `score`, `createdAt`, `updatedAt`, `teamId` FROM `players` AS `players`;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:53','2020-03-01 21:51:53');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Ronaldinho Gaúcho','ronaldinho','Brasileiro',36,3500000,92,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Diego Tardelli','tardelli','Brasileiro',34,1990000,85,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Juan Cazares','cazares','Boliviano',25,750000,79,'2020-03-01 21:51:53','2020-03-01 21:51:53',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `id`, `name`, `nickname`, `nationality`, `age`, `wage`, `score`, `createdAt`, `updatedAt`, `teamId` FROM `players` AS `players` WHERE `players`.`nationality` = 'Brasileiro';
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:54','2020-03-01 21:51:54');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Ronaldinho Gaúcho','ronaldinho','Brasileiro',36,3500000,92,'2020-03-01 21:51:54','2020-03-01 21:51:54',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Diego Tardelli','tardelli','Brasileiro',34,1990000,85,'2020-03-01 21:51:54','2020-03-01 21:51:54',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Juan Cazares','cazares','Boliviano',25,750000,79,'2020-03-01 21:51:54','2020-03-01 21:51:54',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `id`, `name`, `nickname`, `nationality`, `age`, `wage`, `score`, `createdAt`, `updatedAt`, `teamId` FROM `players` AS `players` WHERE `players`.`score` >= '90';
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:54','2020-03-01 21:51:54');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Ronaldinho Gaúcho','ronaldinho','Brasileiro',36,3500000,92,'2020-03-01 21:51:54','2020-03-01 21:51:54',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Diego Tardelli','tardelli','Brasileiro',34,1990000,85,'2020-03-01 21:51:54','2020-03-01 21:51:54',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `id`, `name`, `nickname`, `nationality`, `age`, `wage`, `score`, `createdAt`, `updatedAt`, `teamId` FROM `players` AS `players` WHERE `players`.`id` = '1';
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:54','2020-03-01 21:51:54');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Ronaldinho Gaúcho','ronaldinho','Brasileiro',36,3500000,92,'2020-03-01 21:51:54','2020-03-01 21:51:54',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Diego Tardelli','tardelli','Brasileiro',34,1990000,85,'2020-03-01 21:51:54','2020-03-01 21:51:54',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `id`, `name`, `nickname`, `nationality`, `age`, `wage`, `score`, `createdAt`, `updatedAt`, `teamId` FROM `players` AS `players` WHERE `players`.`id` = '2';
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:54','2020-03-01 21:51:54');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Diego Tardelli','tardelli','Brasileiro',34,1990000,85,'2020-03-01 21:51:54','2020-03-01 21:51:54',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-01 21:51:54','2020-03-01 21:51:54');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `players` (`id`,`name`,`nickname`,`nationality`,`age`,`wage`,`score`,`createdAt`,`updatedAt`,`teamId`) VALUES (DEFAULT,'Diego Tardelli','tardelli','Brasileiro',34,1990000,85,'2020-03-01 21:51:54','2020-03-01 21:51:54',1);
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 0;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SET FOREIGN_KEY_CHECKS = 1;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): DROP TABLE IF EXISTS players;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): DROP TABLE IF EXISTS teams;
+

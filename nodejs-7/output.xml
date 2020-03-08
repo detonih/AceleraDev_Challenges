@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="0" time="0.813">
+  <testsuite name="Adoptable Pets API Endpoints..." errors="0" failures="0" skipped="0" timestamp="2020-02-17T20:14:35" time="0.519" tests="5">
+    <testcase classname="Adoptable Pets API Endpoints... GET /v1/animals" name="Adoptable Pets API Endpoints... GET /v1/animals" time="0.018">
+    </testcase>
+    <testcase classname="Adoptable Pets API Endpoints... GET /v1/animals/:animalId" name="Adoptable Pets API Endpoints... GET /v1/animals/:animalId" time="0.002">
+    </testcase>
+    <testcase classname="Adoptable Pets API Endpoints... POST /v1/animals/:animalId" name="Adoptable Pets API Endpoints... POST /v1/animals/:animalId" time="0.009">
+    </testcase>
+    <testcase classname="Adoptable Pets API Endpoints... PATCH /v1/animals/:animalId" name="Adoptable Pets API Endpoints... PATCH /v1/animals/:animalId" time="0.002">
+    </testcase>
+    <testcase classname="Adoptable Pets API Endpoints... DELETE /v1/animals/:animalId" name="Adoptable Pets API Endpoints... DELETE /v1/animals/:animalId" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>

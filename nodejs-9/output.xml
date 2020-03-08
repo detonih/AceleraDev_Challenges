@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="2" time="1.397">
+  <testsuite name="GET /v1/students should" errors="0" failures="2" skipped="0" timestamp="2020-02-15T12:43:17" time="0.806" tests="5">
+    <testcase classname="GET /v1/students should ..." name="GET /v1/students should ..." time="0.038">
+    </testcase>
+    <testcase classname="GET /v1/students/:id should ..." name="GET /v1/students/:id should ..." time="0.02">
+    </testcase>
+    <testcase classname="POST /v1/students should ..." name="POST /v1/students should ..." time="0.038">
+    </testcase>
+    <testcase classname="PATCH /v1/students/:id should ..." name="PATCH /v1/students/:id should ..." time="0.021">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 3
+
+- Object {}
++ Object {
++   &quot;success&quot;: &quot;The record has been updated.&quot;,
++ }
+    at Object.&lt;anonymous&gt; (/home/detonih/codenation/nodejs-9/test/server.test.js:118:22)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)</failure>
+    </testcase>
+    <testcase classname="DELETE /v1/students/:id should ..." name="DELETE /v1/students/:id should ..." time="0.017">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+If it should pass with deep equality, replace &quot;toBe&quot; with &quot;toStrictEqual&quot;
+
+Expected: {}
+Received: serializes to the same string
+    at Object.&lt;anonymous&gt; (/home/detonih/codenation/nodejs-9/test/server.test.js:126:22)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
