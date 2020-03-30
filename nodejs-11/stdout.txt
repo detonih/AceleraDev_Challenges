@@ -1,0 +1,90 @@
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): DROP TABLE IF EXISTS teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): CREATE TABLE IF NOT EXISTS `teams` (`id` INTEGER NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL, `description` TEXT, `coach` VARCHAR(255), `shieldUrl` VARCHAR(255), `birthYear` INTEGER(4), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SHOW INDEX FROM `teams` FROM `codenation_development`
+
+  console.log src/middlewares/auth.js:6
+    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1ODM5NTQwOTUsImV4cCI6MTU4NDA0MDQ5NX0.QKP3yScRbhrHRYhezgPF0rKWHwtsZyF0T2Zly7ImxrQ
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-11 19:14:55','2020-03-11 19:14:55');
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log src/middlewares/auth.js:6
+    some invalid token
+
+  console.log src/middlewares/auth.js:10
+    JsonWebTokenError {
+      name: 'JsonWebTokenError',
+      message: 'jwt malformed'
+    }
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-11 19:14:55','2020-03-11 19:14:55');
+
+  console.log src/middlewares/auth.js:6
+    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1ODM5NTQwOTUsImV4cCI6MTU4NDA0MDQ5NX0.QKP3yScRbhrHRYhezgPF0rKWHwtsZyF0T2Zly7ImxrQ
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): UPDATE `teams` SET `description`='O melhor time do Brasil',`updatedAt`='2020-03-11 19:14:55' WHERE `id` = '1'
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): SELECT `id`, `name`, `description`, `coach`, `shieldUrl`, `birthYear`, `createdAt`, `updatedAt` FROM `teams` AS `teams` WHERE `teams`.`id` = '1';
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-11 19:14:56','2020-03-11 19:14:56');
+
+  console.log src/middlewares/auth.js:6
+    some invalid token
+
+  console.log src/middlewares/auth.js:10
+    JsonWebTokenError {
+      name: 'JsonWebTokenError',
+      message: 'jwt malformed'
+    }
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-11 19:14:56','2020-03-11 19:14:56');
+
+  console.log src/middlewares/auth.js:6
+    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1ODM5NTQwOTYsImV4cCI6MTU4NDA0MDQ5Nn0.3HHJGNya7yTRA0weBnMakf93op6p14WqWG96tOba0DM
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): DELETE FROM `teams` WHERE `id` = '1'
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): INSERT INTO `teams` (`id`,`name`,`description`,`coach`,`shieldUrl`,`birthYear`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Atlético MG','Maior time do Brasil','Cuca','',1908,'2020-03-11 19:14:56','2020-03-11 19:14:56');
+
+  console.log src/middlewares/auth.js:6
+    some invalid token
+
+  console.log src/middlewares/auth.js:10
+    JsonWebTokenError {
+      name: 'JsonWebTokenError',
+      message: 'jwt malformed'
+    }
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): TRUNCATE TABLE teams;
+
+  console.log node_modules/sequelize/lib/sequelize.js:1094
+    Executing (default): DROP TABLE IF EXISTS teams;
+

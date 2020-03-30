@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.112" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2020-01-27T18:53:36" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Monty Python " timestamp="2020-01-27T18:53:36" tests="2" file="/home/detonih/codenation/nodejs-2/test/submit.test.js" failures="1" time="0.112">
+    <testcase name="Monty Python  /v1/quote" time="0.105" classname="/v1/quote">
+    </testcase>
+    <testcase name="Monty Python  /v1/quote/:actor" time="0.007" classname="/v1/quote/:actor">
+      <failure message="expected undefined not to be undefined" type="AssertionError"><![CDATA[AssertionError: expected undefined not to be undefined
+    at doAsserterAsyncAndAddThen (node_modules/chai-as-promised/lib/chai-as-promised.js:296:33)
+    at Assertion.<anonymous> (node_modules/chai-as-promised/lib/chai-as-promised.js:286:25)
+    at Assertion.get (node_modules/chakram/node_modules/chai/lib/chai/utils/overwriteProperty.js:50:37)
+    at Context.<anonymous> (test/submit.test.js:37:32)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

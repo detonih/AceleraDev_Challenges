@@ -1,0 +1,62 @@
+[
+    {
+        "name": "freeCodeCamp/freeCodeCamp",
+        "description": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code for free together with millions of people.",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+        "stars": 295807
+    },
+    {
+        "name": "vuejs/vue",
+        "description": "🖖 A progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+        "url": "https://github.com/vuejs/vue",
+        "stars": 117359
+    },
+    {
+        "name": "facebook/react",
+        "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+        "url": "https://github.com/facebook/react",
+        "stars": 113975
+    },
+    {
+        "name": "d3/d3",
+        "description": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:",
+        "url": "https://github.com/d3/d3",
+        "stars": 79698
+    },
+    {
+        "name": "airbnb/javascript",
+        "description": "JavaScript Style Guide",
+        "url": "https://github.com/airbnb/javascript",
+        "stars": 77537
+    },
+    {
+        "name": "facebook/react-native",
+        "description": "A framework for building native apps with React.",
+        "url": "https://github.com/facebook/react-native",
+        "stars": 70185
+    },
+    {
+        "name": "angular/angular.js",
+        "description": "AngularJS - HTML enhanced for web apps!",
+        "url": "https://github.com/angular/angular.js",
+        "stars": 59207
+    },
+    {
+        "name": "facebook/create-react-app",
+        "description": "Set up a modern web app by running one command.",
+        "url": "https://github.com/facebook/create-react-app",
+        "stars": 58145
+    },
+    {
+        "name": "FortAwesome/Font-Awesome",
+        "description": "The iconic SVG, font, and CSS toolkit",
+        "url": "https://github.com/FortAwesome/Font-Awesome",
+        "stars": 57760
+    },
+    {
+        "name": "nodejs/node",
+        "description": "Node.js JavaScript runtime :sparkles::turtle::rocket::sparkles:",
+        "url": "https://github.com/nodejs/node",
+        "stars": 54720
+    }
+]
